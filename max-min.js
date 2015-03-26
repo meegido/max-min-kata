@@ -15,17 +15,23 @@ function min_element (sequence) {
 }
 
 function max_element (sequence) {
+	var maxNumber = Number.MIN_VALUE;
 
-	
-	return 99
+	for (i = 0; i < sequence.length; i++){
+		var currentNumber = sequence[i];
+
+		if(currentNumber > maxNumber){
+			maxNumber = currentNumber;
+		}
+	}
+
+	return maxNumber;
 }
 
 
 
 console.log(min_element([12,4,99,7]));
 console.log(max_element([12,4,99,7]));
-
-
 
 
 
