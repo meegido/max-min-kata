@@ -1,14 +1,17 @@
 
-
 function min_element (sequence) {
-	var maximumNumber =  1000;
+	var minNumber = Number.MAX_VALUE;
 
 	for (i = 0; i < sequence.length; i++){
+		var currentNumber = sequence[i];
 
-		if(sequence.length < maximumNumber){
-			return sequence.Math.min.applay(sequence)
+		if(currentNumber < minNumber){
+			minNumber = currentNumber;
 		}
 	}
+
+	return minNumber;
+
 }
 
 function max_element (sequence) {
